@@ -23,7 +23,7 @@ sudo make           # 모듈을 컴파일하고
 sudo make install   # 컴파일된 모듈을 Apache Module Directory로 복사한다.
 ```
 
-4. Apache의 설정파일인 apache2.conf의 맨 밑에 아래와 같은 내용을 추가한다.
+4. /etc/apache2로 이동한 다음, Apache의 설정파일인 apache2.conf의 맨 밑에 아래와 같은 내용을 추가한다.
 
 ```bash
 LoadModule [프로젝트이름]_module /usr/lib/apache2/modules/[모듈이름].so
@@ -37,3 +37,6 @@ LoadModule [프로젝트이름]_module /usr/lib/apache2/modules/[모듈이름].s
 sudo apachectl restart 또는 sudo apachectl start
 ```
 
+6. 모듈 삭제
+* /usr/lib/apache2/modules로 이동한 다음 삭제할 모듈을 삭제한다.
+* /etc/apache2/apache2.conf에서 작성되어 있는 모듈 관련 코드를 지운다.
