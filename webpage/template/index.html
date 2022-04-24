@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=""text/css" href="asset/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>더하기 계산기</h1>
+    <div style="height: 100; width: 100%" />
+    <h4>더하기를 하기 위한 두 개의 수를 입력하세요</h4>
+
+    <form>
+        <div class="input-layer">
+            <input type="number" class="input-style" id="n1"/>
+            +
+            <input type="number" class="input-style" id="n2"/>
+        </div>
+    </form>
+    <button onclick="request()">Calculate!</button>
+
+    <h4>Result</h4>
+    <h4 id="res">????</h4>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="asset/js/index.js"></script>
+</body>
+</html>
